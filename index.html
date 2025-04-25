@@ -5,7 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
-        
+        body{
+            margin: 0;
+            height: 100vh;
+
+            background:#222;
+
+            display: flex;
+                justify-content: center;
+            --js: change;
+                flex-direction: column-reverse;
+
+            --global-size: 100vw;
+        }
+
+        #buttons{
+            display: flex;
+            padding: calc(.1*var(--global-size));
+            justify-content: space-around;
+            --js: change;
+            flex-direction: row;
+        }
+        button{
+            --size: calc(.1*var(--global-size));
+            width: var(--size);
+            height: var(
+            --size);
+            border: 0;
+            padding: 0;
+            background: #333;
+        }
+
+        #canvas-container{
+            display: flex;
+            justify-content: center;
+            --js: change;
+            flex-direction: row;
+        }
+        canvas{
+            --size: calc(var());
+            --size: calc(.7*var(--global-size));
+            width: var(--size);
+            height: var(--size);
+            --to: remove;
+            background: #333;
+        }
     </style>
 
     <title>Repeating Decimals</title>
